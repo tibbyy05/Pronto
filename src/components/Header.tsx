@@ -47,7 +47,7 @@ export default function Header() {
               src="/logo.png"
               alt="Pronto Property Inspectors"
               className={`transition-all duration-[400ms] w-auto ${
-                isScrolled ? 'h-9 sm:h-10.5' : 'h-10.5 sm:h-13.5'
+                isScrolled ? 'h-[4.348377rem] sm:h-[5.0731065rem]' : 'h-[5.0731065rem] sm:h-[6.0394125rem]'
               }`}
             />
           </Link>
