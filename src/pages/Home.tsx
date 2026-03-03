@@ -267,7 +267,7 @@ export default function Home() {
               <FadeIn key={service.name} delay={index * 0.08}>
                 <Link
                   to={service.href}
-                  className="group relative rounded-lg border border-gray-200 bg-white p-5 sm:p-6 transition-all duration-[400ms] ease-[cubic-bezier(.22,1,.36,1)] hover:-translate-y-1 hover:border-gold hover:shadow-[0_20px_50px_rgba(0,0,0,0.08)] active:scale-95 touch-manipulation before:absolute before:left-0 before:top-0 before:h-1 before:w-full before:origin-left before:scale-x-0 before:bg-gold before:transition-transform before:duration-[400ms] before:ease-[cubic-bezier(.22,1,.36,1)] hover:before:scale-x-100"
+                  className="group relative block rounded-lg border border-gray-200 bg-white p-5 sm:p-6 transition-all duration-[400ms] ease-[cubic-bezier(.22,1,.36,1)] hover:-translate-y-1 hover:border-gold hover:shadow-[0_20px_50px_rgba(0,0,0,0.08)] active:scale-95 touch-manipulation before:absolute before:left-0 before:top-0 before:h-1 before:w-full before:origin-left before:scale-x-0 before:hidden sm:before:block before:bg-gold before:transition-transform before:duration-[400ms] before:ease-[cubic-bezier(.22,1,.36,1)] hover:before:scale-x-100"
                 >
                   <service.icon className="h-10 w-10 sm:h-12 sm:w-12 text-gold transition-transform duration-300 group-hover:scale-105" />
                   <h3 className="mt-3 sm:mt-4 font-serif text-lg sm:text-xl font-semibold text-navy leading-tight">
