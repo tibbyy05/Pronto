@@ -125,7 +125,7 @@ export default function Services() {
             {services.map((service, index) => (
               <div
                 key={service.name}
-                className={`services-card flex flex-col gap-6 sm:gap-8 lg:flex-row lg:items-center overflow-visible ${
+                className={`services-card flex flex-col gap-6 sm:gap-8 lg:flex-row lg:items-center overflow-hidden lg:overflow-visible ${
                   index % 2 === 1 ? 'lg:flex-row-reverse' : ''
                 }`}
               >

@@ -27,14 +27,20 @@
 }
 
 @media (max-width: 767px) {
+  .services-card,
+  .services-card *,
   .services-card::before,
-  .services-card::after {
-    content: none !important;
-    display: none !important;
+  .services-card::after,
+  .services-card *::before,
+  .services-card *::after {
+    border-style: none !important;
   }
 
-  .services-card .services-card-corner,
-  .services-card [data-corner] {
+  .services-card::before,
+  .services-card::after,
+  .services-card *::before,
+  .services-card *::after {
+    content: none !important;
     display: none !important;
   }
 }
