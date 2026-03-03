@@ -12,6 +12,20 @@
   }
 }
 
+@layer utilities {
+  @media (max-width: 639px) {
+    .services-learn-more {
+      border-left: 0 !important;
+    }
+
+    .services-learn-more::before,
+    .services-learn-more::after {
+      content: none !important;
+      display: none !important;
+    }
+  }
+}
+
 @keyframes heroFadeIn {
   from {
     opacity: 0;

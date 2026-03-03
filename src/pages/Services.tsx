@@ -139,7 +139,7 @@ export default function Services() {
                   <p className="mt-3 sm:mt-4 text-base sm:text-lg text-gray-600 leading-relaxed">{service.description}</p>
                   <Link
                     to={service.href}
-                    className="mt-4 sm:mt-6 inline-flex items-center text-sm sm:text-base text-gold transition-colors hover:text-navy touch-manipulation relative z-10 border-l-0 before:content-none after:content-none"
+                    className="services-learn-more mt-4 sm:mt-6 inline-flex items-center text-sm sm:text-base text-gold transition-colors hover:text-navy touch-manipulation relative z-10 border-l-0 before:content-none after:content-none"
                   >
                     Learn more
                     <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />

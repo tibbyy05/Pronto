@@ -43,23 +43,15 @@ export default function Header() {
           }`}
         >
           <Link to="/" className="flex items-center">
-            <span
-              className={`inline-flex items-center transition-all duration-[400ms] ${
+            <img
+              src="/logo.png"
+              alt="Pronto Property Inspectors"
+              className={`transition-all duration-[400ms] w-auto ${
                 isScrolled
-                  ? 'rounded-md bg-white/90 px-2 py-1 shadow-[0_2px_8px_rgba(0,0,0,0.25)]'
-                  : ''
+                  ? 'h-[4.348377rem] sm:h-[5.0731065rem] brightness-0 invert'
+                  : 'h-[5.0731065rem] sm:h-[6.0394125rem]'
               }`}
-            >
-              <img
-                src="/logo.png"
-                alt="Pronto Property Inspectors"
-                className={`transition-all duration-[400ms] w-auto ${
-                  isScrolled
-                    ? 'h-[4.348377rem] sm:h-[5.0731065rem] brightness-125'
-                    : 'h-[5.0731065rem] sm:h-[6.0394125rem]'
-                }`}
-              />
-            </span>
+            />
           </Link>
 
           <div className="hidden lg:flex lg:items-center lg:space-x-8">
