@@ -26,6 +26,19 @@
   }
 }
 
+@media (max-width: 767px) {
+  .services-card::before,
+  .services-card::after {
+    content: none !important;
+    display: none !important;
+  }
+
+  .services-card .services-card-corner,
+  .services-card [data-corner] {
+    display: none !important;
+  }
+}
+
 @keyframes heroFadeIn {
   from {
     opacity: 0;
