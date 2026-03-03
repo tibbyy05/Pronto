@@ -125,11 +125,11 @@ export default function Services() {
             {services.map((service, index) => (
               <div
                 key={service.name}
-                className={`flex flex-col gap-6 sm:gap-8 lg:flex-row lg:items-center ${
+                className={`flex flex-col gap-6 sm:gap-8 lg:flex-row lg:items-center overflow-visible ${
                   index % 2 === 1 ? 'lg:flex-row-reverse' : ''
                 }`}
               >
-                <div className="flex-1">
+                <div className="flex-1 relative z-10">
                   <div className="inline-block rounded-full bg-cream p-3.5 sm:p-4">
                     <service.icon className="h-10 w-10 sm:h-12 sm:w-12 text-gold" />
                   </div>
@@ -139,7 +139,7 @@ export default function Services() {
                   <p className="mt-3 sm:mt-4 text-base sm:text-lg text-gray-600 leading-relaxed">{service.description}</p>
                   <Link
                     to={service.href}
-                    className="mt-4 sm:mt-6 inline-flex items-center text-sm sm:text-base text-gold transition-colors hover:text-navy touch-manipulation"
+                    className="mt-4 sm:mt-6 inline-flex items-center text-sm sm:text-base text-gold transition-colors hover:text-navy touch-manipulation relative z-10 border-l-0 before:content-none after:content-none"
                   >
                     Learn more
                     <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
